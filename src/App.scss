@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito:wght@700&family=Roboto:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 500 0.8125rem 'Roboto', sans-serif;
+  background: #e5e5e5;
+}
+
+header {
+  padding-top: 41px;
+}
+
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	margin-top: 4px;
+  font-size: 14px;
+	font-weight: 600;
+}
+
+.container {
+  max-width: 1054px;
+  margin: 0 auto;
+  padding: 0 52px 0 48px;
+}
+
+.wrapper {
+  padding: 41px 0 44px 0;
+	height: 100vh;
+}
+
+.loader,
+.error-msg,
+.tests-message {
+  text-align: center;
+  margin-top: 300px;
+  font-size: 1.2rem;
+}
+
+.not-found-wrapper {
+	text-align: center;
+}
+
+.not-found-message {
+	font: 500 1.125rem 'Montserrat', sans-serif;
+	line-height: 1.375rem;
+	text-align: center;
+	margin-top: 9.3125rem;
+}
+
+.reset-btn {
+	margin-top: 2.3125rem;
+}
+
+.tests-message {
+  margin-top: 150px;
+}
+
+.error-msg {
+  color: red;
+}
+
+.search-section {
+  margin-top: 40px;
+}
+
+.search-wrapper {
+  padding: 0 17px 0 13px;
+  border: 1px solid #ebebeb;
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+.search-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 400 0.875rem 'Roboto', sans-serif;
+}
+
+.search-form {
+  flex-grow: 1;
+  margin-left: 11px;
+  line-height: 45px;
+
+  > input {
+    border: none;
+    width: 100%;
+    line-height: 45px;
+    outline: none;
+    font: inherit;
+
+    &::placeholder {
+      color: #d1d1d1;
+    }
+  }
+}
+
+.search-info {
+  line-height: 45px;
+  flex: 0 0 4.6875rem;
+  color: #d1d1d1;
+  text-align: right;
+}
+
+.asc-icon,
+.desc-icon {
+  height: 9px;
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
+.desc-icon {
+  transform: rotate(180deg);
+}
+
+.tests-table {
+  border-spacing: 0 5px;
+  width: 100%;
+  margin-top: 30px;
+  text-align: left;
+
+  > thead {
+    th {
+      font-size: 0.6875rem;
+      font-weight: 500;
+      color: #999999;
+      user-select: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    th:first-child {
+      padding-left: 15px;
+      padding-bottom: 10px;
+    }
+  }
+
+  > tbody {
+    tr {
+      background-color: #ffffff;
+
+      &:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+      }
+
+      > td:first-child {
+        border-radius: 3px 0 0 3px;
+        padding: 0 25px 0 11px;
+        border-left-width: 4px;
+        border-left-style: solid;
+        width: 429px;
+        font-weight: 500;
+        font-size: 0.8125rem;
+      }
+
+      > td:nth-child(2) {
+        width: 125px;
+        padding-right: 25px;
+        font-weight: 400;
+        font-size: 0.75rem;
+      }
+      > td:nth-child(3) {
+        width: 116px;
+        padding-right: 54px;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 0.75rem;
+      }
+      > td:nth-child(4) {
+        width: 177px;
+        padding-right: 60px;
+        font-weight: 400;
+        font-size: 0.75rem;
+      }
+
+      > td:last-child {
+        border-radius: 0 3px 3px 0;
+        padding: 20px 12px 20px 0;
+      }
+    }
+  }
+}
+
+.btn {
+  width: 95px;
+  height: 30px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  outline: none;
+  color: white;
+  padding: 7px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font: 600 0.75rem 'Montserrat', sans-serif;
+
+  &.btn-green {
+    background-color: #2ee5ac;
+  }
+
+  &.btn-gray {
+    background-color: #7d7d7d;
+  }
+}
+
+.unique-page {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.back-btn {
+	font: 700 1.125rem 'Nunito', sans-serif;
+	outline: none;
+	background-color: transparent;
+  border: none;
+  cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.back-icon {
+	margin-right: 19px;
+}
+
+.red-border {
+  border-color: #e14165;
+}
+
+.purple-border {
+  border-color: #c2c2ff;
+}
+
+.blue-border {
+  border-color: #8686ff;
+}
+
+.green-text {
+  color: #1bda9d;
+}
+
+.orange-text {
+  color: #ff8346;
+}
+
+.red-text {
+  color: #fe4848;
+}
